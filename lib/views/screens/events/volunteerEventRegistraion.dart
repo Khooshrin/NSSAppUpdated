@@ -81,7 +81,7 @@ class _VolunteerEventRegistrationScreenState
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+        padding: const EdgeInsets.fromLTRB(20, 10, 20, 50),
         child: SafeArea(
           child: Stack(
             children: [
@@ -218,14 +218,16 @@ class _VolunteerEventRegistrationScreenState
                     const SizedBox(height: 50.0),
 
 
-                  ],
-                ),
+                 // ],
+            //    ),
 
 
 
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+             // ),
+               Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.center,
+
                 children: [
                   SizedBox(),
                   Padding(
@@ -237,7 +239,7 @@ class _VolunteerEventRegistrationScreenState
                           onTap: _registerSubmit,
                           child: Container(
                             //width: MediaQuery.of(context).size.width,
-                            margin: EdgeInsets.fromLTRB(12, 5, 12, 5),
+                           margin: EdgeInsets.fromLTRB(12, 5, 12, 5),
                             decoration: BoxDecoration(
                                 color: registrationAvailableLoading ==
                                         RegState.loading
@@ -279,6 +281,9 @@ class _VolunteerEventRegistrationScreenState
                   ),
                 ],
               ),
+      ],
+                ),
+    ),
             ],
           ),
         ),
